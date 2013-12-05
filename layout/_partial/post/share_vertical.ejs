@@ -1,6 +1,13 @@
-<% if (theme.addthis.enable){ %>
-  <div class="addthis addthis_toolbox addthis_default_style">
-    <a class="addthis_counter addthis_pill_style"></a>
-  </div>
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js<% if (theme.addthis.pubid){ %>#pubid=<%= theme.addthis.pubid %><% } %>"></script>
-<% } %>
+<div class="post-meta">
+<h4>Post Info</h4>
+  <ul>
+     <li class="user"><%- config.author %></li>
+     <li class="time"><%= item.date.format("HH:MM") %></li>
+     <% if (item.comment && config.disqus_shortname){ %>
+      <li class="comment"><a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a></li>
+     <% } %>
+     <li class="permalink"><a href="<%- config.root %><%- item.path %>">Permalink</a></li>
+  </ul>
+</div>
+<%- partial('post/tag') %>
+

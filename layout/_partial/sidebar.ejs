@@ -1,26 +1,7 @@
 <div id="sidebar">
-  <!-- Logo -->
-  <div id="logo">
-    <h1><%= config.title %></h1>
-    <h2><% if (config.subtitle){ %><%= config.subtitle %><% } %></h2>
-  </div>
-  
-  <!-- Nav -->
-  <nav id="nav">
-    <ul>
-      <% for (var i in theme.menu){ %>
-      <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
-      <% } %>
-    </ul>
-  </nav>
-
-
   <!-- Hexo Widgets -->
   <% theme.widgets.forEach(function(widget){ %>
     <%- partial('../_widget/' + widget) %>
   <% }); %>
-
-  <!-- Copyright -->
-  <%- partial('footer') %>
 
 </div>

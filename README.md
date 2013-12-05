@@ -2,6 +2,8 @@
 
 CoolBlue theme ported to [Hexo]
 
+![](http://i.minus.com/iRlwPj7tIkBBU.png)
+
 ## Install
 
 Execute the following command and modify `theme` in `_config.yml` to `coolblue`.

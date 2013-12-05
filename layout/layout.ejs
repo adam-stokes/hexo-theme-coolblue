@@ -1,16 +1,49 @@
 <%- partial('_partial/head') %>
 
-<body class="left-sidebar">
+<body id="top">
+  <!--header -->
+  <div id="header-wrap">
+    <header>
+      <hgroup>
+        <h1><a href="<%= config.root %>"><%= config.title %></a></h1>
+        <h3><% if (config.subtitle){ %><%= config.subtitle %><% } %></h3>
+      </hgroup>
+      <!-- nav -->
+      <nav>
+	<ul>
+	  <% for (var i in theme.menu){ %>
+	  <li><a href="<%- theme.menu[i] %>"><%= i %></a><span></span></li>
+	  <% } %>
+	</ul>
+      </nav>
+
+      <div class="subscribe">
+        <span>Subscribe:</span> | <a href="<%= config.root %>atom.xml">RSS</a>
+      </div>
+   <form id="quick-search" method="get" action="//google.com/search" accept-charset="utf8">
+      <fieldset class="search">
+         <label for="qsearch">Search:</label>
+         <input class="tbox" id="qsearch" type="text" name="q" placeholder="<%= __('search') %>" />
+	 <input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
+         <button class="btn" title="Submit Search">Search</button>
+      </fieldset>
+   </form>
+    </header>
+  </div>
+
   <!-- Wrapper -->
-  <div id="wrapper">
+  <div id="content-wrap">
     <!-- Content -->
-    <div id="content">
-      <div id="content-inner">
+    <div id="content" class="clearfix">
+      <!-- main -->
+      <div id="main">
 	<%- body %>
       </div>
-    </div>
     <%- partial('_partial/sidebar') %>
-    <%- partial('_partial/after_footer') %>
+    </div>
+
   </div>
+  <%- partial('_partial/footer') %>
+  <%- partial('_partial/after_footer') %>
 </body>
 </html>

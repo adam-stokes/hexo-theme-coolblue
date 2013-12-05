@@ -1,12 +1,15 @@
-<div id="copyright">
+<footer>
+  <p class="footer-left">
   <% if (config.author){ %>
   &copy; <%= new Date().getFullYear() %> <%= config.author %>
   <% } else { %>
   &copy; <%= new Date().getFullYear() %> <%= config.title %>
   <% } %>
-  Powered by: <a href="https://github.com/tommy351/hexo">Hexo</a><br />
-  Designed by: <a href="http://html5up.net/">HTML5 UP</a>
-  <p>
+  <span>|</span>
+  Powered by: <a href="https://github.com/tommy351/hexo">Hexo</a> <span>|</span>
+  Designed by: <a href="http://styleshout.com/">styleshout</a>
+  </p>
+  <p class="footer-right">
     <% if (theme.twitter.username) { %>
       <a href="https://twitter.com/<%= theme.twitter.username %>" class="fa fa-twitter">&nbsp;</a>
      <% } %>
@@ -16,7 +19,5 @@
     <% if (theme.google_plus.username) { %>
       <a href="https://plus.google.com/+<%= theme.google_plus.username %>" class="fa fa-google-plus">&nbsp;</a>
      <% } %>
-
-   </p>
-</div>
-
+  </p>
+</footer>

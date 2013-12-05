@@ -426,9 +426,8 @@ footer {
 /* Logo */
 header hgroup {
     position: absolute;
-    background: url(../images/logo.png) no-repeat;
     height: 62px;
-    width: 215px;
+/*    width: 400px; */
     display: block;
     top: 100px;
     left: 10px;
@@ -438,13 +437,10 @@ header hgroup h1 {
     padding: 0;
 }
 header hgroup h1 a {
-    text-indent: -9999em;
     display: block;
     height: 48px;
-    width: 215px;
 }
 header hgroup h3  {
-    text-indent: -9999em;
     height: 0;
 }
 
