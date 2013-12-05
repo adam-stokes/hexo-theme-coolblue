@@ -1,21 +1,21 @@
-# Striped
+# CoolBlue
 
-Striped theme ported to [Hexo]
+CoolBlue theme ported to [Hexo]
 
 ## Install
 
-Execute the following command and modify `theme` in `_config.yml` to `striped`.
+Execute the following command and modify `theme` in `_config.yml` to `coolblue`.
 
 ```
-git clone git://github.com/battlemidget/hexo-theme-striped.git themes/striped
+git clone git://github.com/battlemidget/hexo-theme-striped.git themes/coolblue
 ```
 
 ## Update
 
-Execute the following command to update Striped.
+Execute the following command to update CoolBlue.
 
 ```
-cd themes/striped
+cd themes/coolblue
 git pull
 ```
 
@@ -72,10 +72,6 @@ rss:
 - **fancybox** - Enable [Fancybox]
 - **google_analytics** - Google Analytics ID
 - **rss** - RSS subscription link (change if using Feedburner)
-
-### Screenshot
-
-![](http://i.minus.com/ibkDxgZv2FMZsd.png)
 
 [Hexo]: http://zespia.tw/hexo/
 [AddThis]: https://www.addthis.com
