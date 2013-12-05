@@ -31,10 +31,8 @@ menu:
   Archives: /archives
 
 widgets:
-- search
 - category
 - tag
-- twitter
 
 excerpt_link: Read More
 
@@ -50,8 +48,6 @@ addthis:
   twitter: true
   google: true
   pinterest: true
-
-fancybox: true
 
 google_analytics:
 rss:
@@ -71,7 +67,6 @@ rss:
   - **twitter** - Enable Twitter button
   - **google** - Enable Google+ button
   - **pinterest** - Enable Pinterest button
-- **fancybox** - Enable [Fancybox]
 - **google_analytics** - Google Analytics ID
 - **rss** - RSS subscription link (change if using Feedburner)
 
