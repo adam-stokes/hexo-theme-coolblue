@@ -7,7 +7,7 @@ CoolBlue theme ported to [Hexo]
 Execute the following command and modify `theme` in `_config.yml` to `coolblue`.
 
 ```
-git clone git://github.com/battlemidget/hexo-theme-striped.git themes/coolblue
+git clone git://github.com/battlemidget/hexo-theme-coolblue.git themes/coolblue
 ```
 
 ## Update
