@@ -2,7 +2,7 @@
 <h4>Post Info</h4>
   <ul>
      <li class="user"><%- config.author %></li>
-     <li class="time"><%= item.date.format("HH:MM") %></li>
+     <li class="time"><%= item.date.format("h:mma") %></li>
      <% if (item.comment && config.disqus_shortname){ %>
       <li class="comment"><a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a></li>
      <% } %>

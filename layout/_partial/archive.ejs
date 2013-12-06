@@ -17,7 +17,7 @@ if (page.archive){
       <a href="<%- config.root %><%- item.path %>" target="_blank"><%= item.title %></a>
     </div>
     <div class="post-details">
-      Posted on <a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a>
+      Posted on <a href="<%- config.root %><%- item.path %>"><%= item.date.format("ddd, MMMM Do @ h:mmA") %></a>
     </div>
   </li>
   <% }); %>
